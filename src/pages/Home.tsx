@@ -41,8 +41,8 @@ const Home = () => {
             style={{ backgroundImage: `url(${heroImage})` }}
           />
           <div className="absolute inset-0 gradient-hero" />
-          <div className="relative container mx-auto px-4 h-full flex items-center">
-            <div className="max-w-3xl text-white space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
+            <div className="max-w-3xl text-white space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000 text-center">
               <h1 className="font-display font-bold leading-tight">
                 Welcome to Life Church International Juja
               </h1>
@@ -51,7 +51,7 @@ const Home = () => {
                 of Jesus Christ, fostering spiritual growth, and building a Christ-centered community 
                 rooted in love, truth, and service.
               </p>
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="flex flex-wrap gap-4 pt-4 justify-center">
                 <Button
                   asChild
                   size="lg"
