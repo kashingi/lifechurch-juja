@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Church } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import churchLogo from "@/assets/church-logo.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +25,11 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="p-2 gradient-primary rounded-lg shadow-glow transition-smooth group-hover:scale-110">
-              <Church className="h-6 w-6 text-primary-foreground" />
+            <div className="w-12 h-12 rounded-lg overflow-hidden shadow-glow transition-smooth group-hover:scale-110">
+              <img src={churchLogo} alt="Life Church International" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-bold text-lg text-primary">LCI-Juja</span>
-              <span className="text-xs text-muted-foreground">Life Church International</span>
+              <span className="font-display font-bold text-lg text-primary">Life Church International Juja</span>
             </div>
           </Link>
 

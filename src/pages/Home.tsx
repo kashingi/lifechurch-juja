@@ -5,6 +5,7 @@ import { Calendar, Users, Heart, BookOpen, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-worship.jpg";
+import pastorImage from "@/assets/pastor-lci.jpg";
 
 const Home = () => {
   const features = [
@@ -153,8 +154,8 @@ const Home = () => {
               </div>
               <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-elegant">
                 <img
-                  src={heroImage}
-                  alt="Church community"
+                  src={pastorImage}
+                  alt="Church pastors"
                   className="w-full h-full object-cover"
                 />
               </div>
