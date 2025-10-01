@@ -29,8 +29,7 @@ const Navigation = () => {
               <img src={churchLogo} alt="Life Church International" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
-              <span className="font-display font-bold text-lg text-primary">LCI-Juja</span>
-              <span className="text-xs text-muted-foreground">Life Church International</span>
+              <span className="font-display font-bold text-lg text-primary">Life Church International Juja</span>
             </div>
           </Link>
 
