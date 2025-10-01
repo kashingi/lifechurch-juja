@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Target, Compass, Heart, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import pastorsImage from "@/assets/pastors.jpg";
+import pastorsImage from "@/assets/pastor-lci.jpg";
 import communityImage from "@/assets/community.jpg";
 
 const About = () => {
