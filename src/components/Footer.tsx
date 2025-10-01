@@ -13,7 +13,8 @@ const Footer = () => {
                 <img src={churchLogo} alt="Life Church International" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h3 className="font-display font-bold text-primary">Life Church International Juja</h3>
+                <h3 className="font-display font-bold text-primary">LCI-Juja</h3>
+                <p className="text-xs text-muted-foreground">Life Church International</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
