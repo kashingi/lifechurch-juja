@@ -63,7 +63,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Connect With Us</h4>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/pstben.ouma"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-smooth"
                 aria-label="Facebook"
               >

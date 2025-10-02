@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, MapPin, Users, Facebook } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import shiftConference from "@/assets/shift-conference-2025.png";
+import { Button } from "@/components/ui/button";
 
 const Events = () => {
   const upcomingEvents = [
@@ -47,6 +49,70 @@ const Events = () => {
 
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
+            <div className="mb-16">
+              <h2 className="font-display text-center mb-12">Featured Event</h2>
+              <Card className="max-w-4xl mx-auto gradient-card border-border shadow-glow overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+                  <div className="relative h-64 md:h-auto">
+                    <img 
+                      src={shiftConference} 
+                      alt="SHIFT CONFERENCE 2025 - That I may know Him" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                  <CardContent className="p-8 space-y-4 flex flex-col justify-center">
+                    <div>
+                      <h3 className="font-display text-2xl mb-2">SHIFT CONFERENCE 2025</h3>
+                      <p className="text-primary font-semibold italic mb-4">
+                        "That I may know Him" - Philippians 3:10
+                      </p>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 text-sm">
+                        <Calendar className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span className="font-semibold">29th Sep - 5th Oct 2025</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-sm">
+                        <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span>Life Church inc main sanctuary</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-sm">
+                        <Users className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span>Hosts: Pst Ben & Liz | Speakers: Apst. Juma, Bishop Wawire</span>
+                      </div>
+                    </div>
+
+                    <div className="pt-4 space-y-2 text-sm text-muted-foreground">
+                      <p>• Mon-Fri Fire Pact Revival Meetings 5:00PM</p>
+                      <p>• Saturday Pastors Conference 9:00AM-2:00PM</p>
+                      <p>• Saturday Open Session 2:30PM</p>
+                      <p>• Sunday 7:00AM-9:00AM, 9:00AM-12:30PM</p>
+                      <p>• Prophetic Rally 2:30PM</p>
+                    </div>
+
+                    <div className="pt-4">
+                      <Button asChild className="w-full">
+                        <a 
+                          href="https://www.facebook.com/pstben.ouma" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center gap-2"
+                        >
+                          <Facebook className="h-4 w-4" />
+                          More Info on Facebook
+                        </a>
+                      </Button>
+                    </div>
+
+                    <p className="text-xs text-muted-foreground">
+                      Contact: 0734 587 859, 0727315043
+                    </p>
+                  </CardContent>
+                </div>
+              </Card>
+            </div>
+
             <div className="mb-12">
               <h2 className="font-display text-center mb-4">Regular Events</h2>
               <p className="text-center text-muted-foreground max-w-2xl mx-auto">
