@@ -10,7 +10,7 @@ const Events = () => {
     {
       title: "Sunday Worship Service",
       date: "Every Sunday",
-      time: "10:00 AM - 12:00 PM",
+      time: "1st Service: 7:00 AM - 9:00 AM | 2nd Service: 9:00 AM - 12:00 PM",
       location: "Main Sanctuary",
       description: "Join us for inspiring worship, powerful preaching, and fellowship.",
       recurring: true,
