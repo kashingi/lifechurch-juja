@@ -52,6 +52,11 @@ const Home = () => {
                 of Jesus Christ, fostering spiritual growth, and building a Christ-centered community 
                 rooted in love, truth, and service.
               </p>
+              <div className="text-base md:text-lg text-white/90 leading-relaxed space-y-2 pt-2">
+                <p className="font-semibold">Theme: Fruitfulness.</p>
+                <p className="italic">Ezekiel 47:12, Psalms 1:3, and Luke 19:17.</p>
+                <p>Evangelizing, Discipling, Equipping, and Commissioning.</p>
+              </div>
               <div className="flex flex-wrap gap-4 pt-4 justify-center">
                 <Button
                   asChild

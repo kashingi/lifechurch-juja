@@ -86,17 +86,15 @@ const Contact = () => {
                         <div className="flex-1">
                           <h3 className="font-semibold mb-2">Service Times</h3>
                           <div className="space-y-2 text-sm text-muted-foreground">
-                            <div className="flex justify-between">
-                              <span>Sunday Service:</span>
-                              <span className="font-medium">10:00 AM - 12:00 PM</span>
+                            <div>
+                              <p className="font-semibold mb-1">Sunday Services:</p>
+                              <p>1st Service: 7:00 AM - 9:00 AM</p>
+                              <p>2nd Service: 9:00 AM - 12:00 PM</p>
                             </div>
-                            <div className="flex justify-between">
-                              <span>Wednesday Prayer:</span>
-                              <span className="font-medium">6:00 PM - 8:00 PM</span>
-                            </div>
-                            <div className="flex justify-between">
-                              <span>Friday Youth:</span>
-                              <span className="font-medium">5:00 PM - 7:00 PM</span>
+                            <div className="pt-2">
+                              <p className="font-semibold mb-1">Weekday Services:</p>
+                              <p>Mon-Fri Lunch Hour Services</p>
+                              <p>Every Tuesday: 6:00 PM - 7:30 PM</p>
                             </div>
                           </div>
                         </div>

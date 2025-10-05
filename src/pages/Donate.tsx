@@ -69,11 +69,15 @@ const Donate = () => {
                   <div className="pt-4 space-y-3">
                     <div className="p-4 bg-secondary/50 rounded-lg">
                       <p className="text-xs text-muted-foreground mb-1">Paybill Number</p>
-                      <p className="font-mono font-semibold text-lg">Coming Soon</p>
+                      <p className="font-mono font-semibold text-lg">157193</p>
                     </div>
                     <div className="p-4 bg-secondary/50 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-1">Account Number</p>
-                      <p className="font-mono font-semibold">Your Name or Member ID</p>
+                      <p className="text-xs text-muted-foreground mb-1">Account</p>
+                      <p className="font-mono font-semibold">Life Church</p>
+                    </div>
+                    <div className="p-4 bg-secondary/50 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-1">M-Pesa (Wave)</p>
+                      <p className="font-mono font-semibold">0724072449</p>
                     </div>
                   </div>
                 </CardContent>
@@ -116,15 +120,19 @@ const Donate = () => {
                   <div className="pt-4 space-y-3">
                     <div className="p-4 bg-secondary/50 rounded-lg">
                       <p className="text-xs text-muted-foreground mb-1">Bank Name</p>
-                      <p className="font-semibold">Coming Soon</p>
+                      <p className="font-semibold">Sidian Bank Ltd</p>
                     </div>
                     <div className="p-4 bg-secondary/50 rounded-lg">
                       <p className="text-xs text-muted-foreground mb-1">Account Number</p>
-                      <p className="font-mono font-semibold">Coming Soon</p>
+                      <p className="font-mono font-semibold">01012150009478</p>
+                    </div>
+                    <div className="p-4 bg-secondary/50 rounded-lg">
+                      <p className="text-xs text-muted-foreground mb-1">Swift Code</p>
+                      <p className="font-mono font-semibold">SIDNKENA</p>
                     </div>
                     <div className="p-4 bg-secondary/50 rounded-lg">
                       <p className="text-xs text-muted-foreground mb-1">Account Name</p>
-                      <p className="font-semibold text-sm">Life Church International Juja</p>
+                      <p className="font-semibold text-sm">Life Church International - Juja</p>
                     </div>
                   </div>
                 </CardContent>
