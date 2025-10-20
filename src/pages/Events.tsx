@@ -17,8 +17,8 @@ const Events = () => {
     },
     {
       title: "Midweek Prayer Meeting",
-      date: "Every Wednesday",
-      time: "6:00 PM - 8:00 PM",
+      date: "Every Tuesday",
+      time: "6:00 PM - 7:30 PM",
       location: "Prayer Hall",
       description: "Come together for corporate prayer and intercession.",
       recurring: true,

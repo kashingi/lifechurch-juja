@@ -4,8 +4,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Users, Heart, BookOpen, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import heroImage from "@/assets/hero-worship.jpg";
 import pastorImage from "@/assets/pastor-lci.jpg";
+import fruitfulnessBanner from "@/assets/fruitfulness-banner.png";
+import pastorPortrait from "@/assets/pastor-portrait.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Home = () => {
   const features = [
@@ -37,45 +46,77 @@ const Home = () => {
       
       <main className="flex-1">
         <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          />
-          <div className="absolute inset-0 gradient-hero" />
-          <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
-            <div className="max-w-3xl text-white space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000 text-center">
-              <h1 className="font-display font-bold leading-tight">
-                Welcome to Life Church International Juja
-              </h1>
-              <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                We are honored by your presence. At LCI-Juja, we are committed to proclaiming the Gospel 
-                of Jesus Christ, fostering spiritual growth, and building a Christ-centered community 
-                rooted in love, truth, and service.
-              </p>
-              <div className="text-base md:text-lg text-white/90 leading-relaxed space-y-2 pt-2">
-                <p className="font-semibold">Theme: Fruitfulness.</p>
-                <p className="italic">Ezekiel 47:12, Psalms 1:3, and Luke 19:17.</p>
-                <p>Evangelizing, Discipling, Equipping, and Commissioning.</p>
-              </div>
-              <div className="flex flex-wrap gap-4 pt-4 justify-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow"
-                >
-                  <Link to="/about">Learn More</Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-white/80 text-white hover:bg-white/10 backdrop-blur-sm"
-                >
-                  <Link to="/contact">Visit Us</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="h-full"
+          >
+            <CarouselContent className="h-full">
+              <CarouselItem className="h-[600px] lg:h-[700px]">
+                <div className="relative h-full">
+                  <div className="absolute inset-0 gradient-hero" />
+                  <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
+                    <div className="max-w-3xl text-white space-y-6 text-center">
+                      <h1 className="font-display font-bold leading-tight">
+                        Welcome to Life Church International Juja
+                      </h1>
+                      <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                        We are honored by your presence. At LCI-Juja, we are committed to proclaiming the Gospel 
+                        of Jesus Christ, fostering spiritual growth, and building a Christ-centered community 
+                        rooted in love, truth, and service.
+                      </p>
+                      <div className="flex flex-wrap gap-4 pt-4 justify-center">
+                        <Button
+                          asChild
+                          size="lg"
+                          className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-glow"
+                        >
+                          <Link to="/about">Learn More</Link>
+                        </Button>
+                        <Button
+                          asChild
+                          size="lg"
+                          variant="outline"
+                          className="border-2 border-white/80 text-white hover:bg-white/10 backdrop-blur-sm"
+                        >
+                          <Link to="/contact">Visit Us</Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+
+              <CarouselItem className="h-[600px] lg:h-[700px]">
+                <div className="relative h-full">
+                  <img 
+                    src={fruitfulnessBanner} 
+                    alt="Fruitfulness - Life Church International 25 Years" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+
+              <CarouselItem className="h-[600px] lg:h-[700px]">
+                <div className="relative h-full">
+                  <img 
+                    src={pastorPortrait} 
+                    alt="Pastor Ben" 
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </section>
 
         <section className="py-20 bg-background">

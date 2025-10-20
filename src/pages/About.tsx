@@ -3,7 +3,7 @@ import { Target, Compass, Heart, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import pastorsImage from "@/assets/lci1.jpg";
-import communityImage from "@/assets/community.jpg";
+import congregationImage from "@/assets/congregation.png";
 
 const About = () => {
   return (
@@ -45,8 +45,8 @@ const About = () => {
               </div>
               <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-elegant">
                 <img
-                  src={communityImage}
-                  alt="Church community"
+                  src={congregationImage}
+                  alt="Church congregation"
                   className="w-full h-full object-cover"
                 />
               </div>
