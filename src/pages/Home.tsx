@@ -45,7 +45,7 @@ const Home = () => {
       <Navigation />
       
       <main className="flex-1">
-        <section className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
+        <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
           <Carousel
             opts={{
               align: "start",
@@ -59,7 +59,7 @@ const Home = () => {
             className="h-full"
           >
             <CarouselContent className="h-full">
-              <CarouselItem className="h-[400px] md:h-[500px] lg:h-[600px]">
+              <CarouselItem className="h-[600px] lg:h-[700px]">
                 <div className="relative h-full">
                   <div className="absolute inset-0 gradient-hero" />
                   <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
@@ -94,22 +94,22 @@ const Home = () => {
                 </div>
               </CarouselItem>
 
-              <CarouselItem className="h-[400px] md:h-[500px] lg:h-[600px]">
-                <div className="relative h-full bg-secondary/20">
+              <CarouselItem className="h-[600px] lg:h-[700px]">
+                <div className="relative h-full">
                   <img 
                     src={fruitfulnessBanner} 
                     alt="Fruitfulness - Life Church International 25 Years" 
-                    className="w-full h-full object-contain"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </CarouselItem>
 
-              <CarouselItem className="h-[400px] md:h-[500px] lg:h-[600px]">
-                <div className="relative h-full bg-secondary/20">
+              <CarouselItem className="h-[600px] lg:h-[700px]">
+                <div className="relative h-full">
                   <img 
                     src={pastorPortrait} 
                     alt="Pastor Ben" 
-                    className="w-full h-full object-contain"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
               </CarouselItem>
