@@ -5,7 +5,7 @@ import { Calendar, Users, Heart, BookOpen, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import pastorImage from "@/assets/pastor-lci.jpg";
-import fruitfulnessBanner from "@/assets/fruitfulness-banner.png";
+import fruitfulnessAnniversary from "@/assets/fruitfulness-anniversary.png";
 import pastorPortrait from "@/assets/pastor-portrait.png";
 import {
   Carousel,
@@ -97,8 +97,8 @@ const Home = () => {
               <CarouselItem className="h-[600px] lg:h-[700px]">
                 <div className="relative h-full">
                   <img 
-                    src={fruitfulnessBanner} 
-                    alt="Fruitfulness - Life Church International 25 Years" 
+                    src={fruitfulnessAnniversary} 
+                    alt="Fruitfulness - Life Church International 25 Years Anniversary" 
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
@@ -106,11 +106,30 @@ const Home = () => {
 
               <CarouselItem className="h-[600px] lg:h-[700px]">
                 <div className="relative h-full">
-                  <img 
-                    src={pastorPortrait} 
-                    alt="Pastor Ben" 
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                  <div className="absolute inset-0 gradient-hero" />
+                  <div className="relative container mx-auto px-4 h-full flex items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+                      <div className="relative h-[300px] lg:h-[500px] rounded-2xl overflow-hidden shadow-elegant">
+                        <img 
+                          src={pastorPortrait} 
+                          alt="Pastor Ben" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="text-white space-y-4">
+                        <h2 className="font-display text-3xl lg:text-4xl mb-6">A place to belong; a family of Faith.</h2>
+                        <p className="text-lg lg:text-xl text-white/90 leading-relaxed">
+                          Under the leadership of Pastor Ben, we're growing together in Christ and spreading His love to our community and beyond.
+                        </p>
+                        <p className="text-lg lg:text-xl font-semibold text-accent">
+                          Raising Kingdom-Minded Believers.
+                        </p>
+                        <p className="text-xl lg:text-2xl font-display text-white">
+                          You're always welcome here.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CarouselItem>
             </CarouselContent>
