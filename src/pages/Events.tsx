@@ -24,11 +24,11 @@ const Events = () => {
       recurring: true,
     },
     {
-      title: "Youth Fellowship",
-      date: "Every Friday",
-      time: "5:00 PM - 7:00 PM",
+      title: "weekly lunch hours",
+      date: "Every Day",
+      time: " 12:45pm - 2:00pm ",
       location: "Youth Center",
-      description: "Dynamic fellowship for young people with worship, teaching, and activities.",
+      description: "All are welcomed.",
       recurring: true,
     },
   ];
