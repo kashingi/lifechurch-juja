@@ -24,7 +24,7 @@ const Events = () => {
       recurring: true,
     },
     {
-      title: "weekly lunch hours",
+      title: "Weekly lunch hours",
       date: "Every Day",
       time: " 12:45pm - 2:00pm ",
       location: "Youth Center",
