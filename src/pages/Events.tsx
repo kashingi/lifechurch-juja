@@ -27,7 +27,7 @@ const Events = () => {
       title: "Weekly lunch hours",
       date: "Every Day",
       time: " 12:45pm - 2:00pm ",
-      location: "Youth Center",
+      location: "Juja Square 2nd floor",
       description: "All are welcomed.",
       recurring: true,
     },
