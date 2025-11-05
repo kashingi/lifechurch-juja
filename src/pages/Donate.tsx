@@ -76,8 +76,8 @@ const Donate = () => {
                       <p className="font-mono font-semibold">Life Church</p>
                     </div>
                     <div className="p-4 bg-secondary/50 rounded-lg">
-                      <p className="text-xs text-muted-foreground mb-1">M-Pesa (Wave)</p>
-                      <p className="font-mono font-semibold">0724072449</p>
+                      <p className="text-xs text-muted-foreground mb-1">M-Pesa (Send Wave)</p>
+                      <p className="font-mono font-semibold">0799439719</p>
                     </div>
                   </div>
                 </CardContent>
